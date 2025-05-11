@@ -114,7 +114,7 @@
     <v-navigation-drawer
       app
       dark
-      :color="darkMode ? '#003236' : '#005057'"
+      :color="darkMode ? '#19191a' : '#5E6078'"
       fixed
       width="260"
       v-model="drawer"
@@ -384,13 +384,14 @@
               <template v-slot:activator="{on, attrs}">
                 <v-btn
                   icon
+                  small
                   v-bind="attrs"
                   v-on="on"
                 >
                   <img
-                    style="border-radius: 30px; max-width: 100%;"
+                    style="border-radius: 50%; max-width: 100%; opacity: .5;"
                     :src="`flags/${lang.flag}.svg`"
-                    alt=""
+                    :alt="lang.flag"
                   />
                 </v-btn>
               </template>
@@ -404,9 +405,9 @@
 
                   <v-list-item-icon>
                     <v-img
-                      style="border-radius: 20px; max-width: 24px;"
+                      style="border-radius: 50%; max-width: 24px;"
                       :src="`flags/${lang.flag}.svg`"
-                      alt=""
+                      :alt="lang.flag"
                     />
                   </v-list-item-icon>
 
@@ -616,7 +617,7 @@
     transform: translateY(-1px);
 
     .v-icon {
-      color: #2196f3 !important;
+      color: #959dd9 !important;
     }
   }
 }
@@ -691,6 +692,8 @@
 }
 
 .v-data-table {
+  background: transparent !important;
+
   td:first-child, th:first-child {
     padding-left: 2px !important;
   }
@@ -760,6 +763,11 @@
   .CenterToScreen {
     transform: translateX(-130px);
   }
+}
+
+.theme--dark {
+  color-scheme: dark !important;
+  scrollbar-color: dark !important;
 }
 </style>
 

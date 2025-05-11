@@ -1,12 +1,17 @@
 $material-dark: (
-        'background': #1E1E1E,
-        'app-bar': transparent,
-        'toolbar': transparent,
+  'background': #19191a,
+  'bg-color': #19191a,
+  'surface': #19191a,
+  'app-bar': transparent,
+  'toolbar': transparent,
 );
 
 $material-light: (
-        'app-bar': transparent,
-        'toolbar': transparent,
+  'background': #f3f3f5,
+  'bg-color': #f3f3f5,
+  'surface': #f3f3f5,
+  'app-bar': transparent,
+  'toolbar': transparent,
 );
 
 $tabs-bar-background-color: 'toolbar';

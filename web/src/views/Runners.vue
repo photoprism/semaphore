@@ -252,7 +252,7 @@
 
     <v-divider v-if="!projectId" />
 
-    <v-alert
+    <!-- v-alert
       v-if="!premiumFeatures.project_runners"
       type="info"
       text
@@ -271,7 +271,7 @@
         {{ $t('learn_more_about_pro') }}
         <v-icon>mdi-chevron-right</v-icon>
       </v-btn>
-    </v-alert>
+    </v-alert -->
 
     <v-data-table
       :headers="headers"

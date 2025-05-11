@@ -1,2 +1,6 @@
 web/node_modules/
 vendor/
+bin/
+task/
+config.json
+database.boltdb
